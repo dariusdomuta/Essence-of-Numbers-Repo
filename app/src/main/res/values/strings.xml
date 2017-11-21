@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Essence of Numbers</string>
+    <string name="date_activity">Date Activity</string>
+    <string name="math_activity">Math Activity</string>
+    <string name="numbers_activity">Numbers Activity</string>
+    <string name="years_activity">Years Activity</string>
+    <string name="greet">Choose something you want to be amazed about!!!</string>
+    <string name="numbers">Numbers</string>
+    <string name="math">Math</string>
+    <string name="years">Years</string>
+    <string name="dates">Dates</string>
+</resources>
