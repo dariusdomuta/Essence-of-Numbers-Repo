@@ -3,9 +3,13 @@ package myapps.essenceofnumbers;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
+import java.net.URL;
+
+import Network.NetworkUtils;
 import SecondaryActivities.DateActivity;
 import SecondaryActivities.MathActivity;
 import SecondaryActivities.NumbersActivity;
@@ -15,6 +19,8 @@ import butterknife.ButterKnife;
 
 public class MainActivity extends AppCompatActivity {
 
+    public static final String LOG_TAG = MainActivity.class.getName();
+    public static final String EXTRA_DATA_FOR_INTENT = "Extra data for intent";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        ButterKnife.bind(MainActivity.this);
+
 
         Button datesButton = findViewById(R.id.dates_button);
         datesButton.setOnClickListener(new View.OnClickListener() {

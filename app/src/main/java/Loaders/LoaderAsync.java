@@ -10,17 +10,18 @@ import Network.NetworkUtils;
  */
 
 
-public class Loader extends AsyncTaskLoader<String> {
-    private static final String LOG_TAG = Loader.class.getSimpleName();
+public class LoaderAsync extends AsyncTaskLoader<String> {
+    private static final String LOG_TAG = LoaderAsync.class.getSimpleName();
     private String mUrl;
 
-    public Loader(Context context, String url) {
+    public LoaderAsync(Context context, String url) {
         super(context);
         mUrl = url;
     }
 
     @Override
     protected void onStartLoading() {
+
         forceLoad();
     }
 

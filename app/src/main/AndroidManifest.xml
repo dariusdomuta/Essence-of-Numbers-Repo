@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="myapps.essenceofnumbers">
-
+    <uses-permission android:name="android.permission.INTERNET" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -17,10 +17,51 @@
             </intent-filter>
         </activity>
 
-        <activity android:label="@string/date_activity" android:name="SecondaryActivities.DateActivity"/>
-        <activity android:label="@string/math_activity" android:name="SecondaryActivities.MathActivity"/>
-        <activity android:label="@string/numbers_activity" android:name="SecondaryActivities.NumbersActivity"/>
-        <activity android:label="@string/years_activity" android:name="SecondaryActivities.YearsActivity"/>
+        <activity
+            android:label="@string/date_activity"
+            android:name="SecondaryActivities.DateActivity"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <activity
+            android:label="@string/math_activity"
+            android:name="SecondaryActivities.MathActivity"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <activity
+            android:label="@string/numbers_activity"
+            android:name="SecondaryActivities.NumbersActivity"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:label="@string/years_activity"
+            android:name="SecondaryActivities.YearsActivity"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <activity
+            android:label="@string/result_activity"
+            android:name="SecondaryActivities.ResultActivity"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+
     </application>
 
 </manifest>

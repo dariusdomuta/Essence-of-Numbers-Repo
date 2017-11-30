@@ -4,9 +4,22 @@
     <string name="math_activity">Math Activity</string>
     <string name="numbers_activity">Numbers Activity</string>
     <string name="years_activity">Years Activity</string>
+    <string name="result_activity">Result Activity</string>
+    <string name="network_utils">Network Utils</string>
+    <string name="loader">Loader</string>
     <string name="greet">Choose something you want to be amazed about!!!</string>
     <string name="numbers">Numbers</string>
     <string name="math">Math</string>
     <string name="years">Years</string>
     <string name="dates">Dates</string>
+    <string name="month_and_day">month/day</string>
+    <string name="in_number">Introduce a number: </string>
+    <string name="in_year">Introduce a year: </string>
+    <string name="in_date">Introduce a date: </string>
+    <string name="go_random">OR, go RANDOM, you rebel!</string>\
+    <string name="randomize">Randomize</string>
+    <string name="go">GO!</string>
+    <string name="reset_button">Reset</string>
+    <string name="another_one_button">Try another one!</string>
+    <string name="url_error">Problem building the URL</string>
 </resources>
